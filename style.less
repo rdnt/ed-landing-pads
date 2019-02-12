@@ -1,0 +1,302 @@
+// out: style.css, sourcemap: false, compress: true, autoprefixer: cover 95%
+@font-face {
+	font-family: 'Eurostile';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Eurostile'), url('eurostile.woff') format('woff');
+}
+@font-face {
+	font-family: 'EuroStyle Normal';
+	font-style: normal;
+	font-weight: normal;
+	src: local('EuroStyle Normal'), url('EuroStyle Normal.woff') format('woff');
+}
+html, body {
+	margin: 0;
+	height: 100vh;
+	user-select: none;
+	background-color: #fff;
+}
+.container {
+	position: absolute;
+	width: 80vh;
+	height: 80vh;
+	z-index: 0;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	.interior {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		.layer, .inner {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			transform: rotate(75deg) scale(.5);
+			opacity: 0;
+			transition: transform .5s ease, opacity .5s ease;
+			&.load {
+				transform: rotate(75deg) scale(1);
+				opacity: 1;
+			}
+			pointer-events: none;
+			svg {
+				top: 50%;
+				left: 50%;
+				position: absolute;
+				width: 50%;
+				height: 50%;
+				transform-origin: 0% 0% !important;
+				pointer-events: none;
+			}
+			&.layer {
+				&.l0 {
+					z-index: 1;
+					svg {
+						width: 50%;
+						height: 50%;
+					}
+				}
+				&.l1 {
+					z-index: 2;
+					svg {
+						width: 41%;
+						height: 41%;
+					}
+				}
+				&.l2 {
+					z-index: 3;
+					svg {
+						width: 33%;
+						height: 33%;
+					}
+				}
+				&.l3 {
+					z-index: 4;
+					svg {
+						width: 26%;
+						height: 26%;
+					}
+				}
+				&.l4 {
+					z-index: 5;
+					svg {
+						width: 20%;
+						height: 20%;
+					}
+				}
+				svg {
+					path {
+						pointer-events: all;
+						fill: #f2f2f2;
+						stroke: #747578;
+						stroke-width: 5;
+						transition: fill .15s ease, stroke .15s ease;
+						&:hover {
+							fill: #d8d8da;
+							~ foreignObject p {
+								color: #333;
+							}
+						}
+					}
+					foreignObject {
+						position: relative;
+						transform-origin: 868px 224px;
+						//background-color: rgba(0,0,0,.1);
+						border-radius: 50%;
+						p {
+							height: 256px;
+							width: 256px;
+							margin: 0;
+							line-height: 256px;
+							font-size: 110px;
+							font-family: 'eurostile';
+							text-align: center;
+							color: #111;
+							transition: color .3s ease;
+						}
+					}
+					path.pad.highlighted {
+						&.small {
+							fill: #fcb54b !important;
+						}
+						&.medium {
+							fill: #40a0ac !important;
+						}
+						&.large {
+							fill: #d22f42 !important;
+						}
+						&:hover {
+							&.small {
+								fill: #fca522 !important;
+							}
+							&.medium {
+								fill: #0e9bad !important;
+							}
+							&.large {
+								fill: #de0d26 !important;
+							}
+						}
+					}
+				}
+			}
+			&.inner {
+				z-index: 6;
+				svg {
+					width: 25%;
+					height: 25%;
+					top: 37.5%;
+		    		left: 37.5%;
+					transform: rotate(15deg) scale(1.15);
+					transform-origin: 50% 50% !important;
+					path {
+						fill: #eaeaea;
+						stroke: #747578;
+						stroke-width: 3;
+						pointer-events: all;
+					}
+				}
+				img {
+					position: absolute;
+					width: 25%;
+					height: 25%;
+					top: 37.5%;
+					transform: scale(1.05) rotate(45deg);
+					border-radius: 50%;
+		    		left: 37.5%;
+					opacity: .075;
+				}
+			}
+		}
+	}
+	.options {
+		position: absolute;
+		width: 250px;
+		height: 200px;
+		bottom: 0;
+		&.mode {
+			transform: translateY(27px);
+			left: -250px;
+			.option {
+				transform: translateX(40px);
+				&:first-child img {
+					transform: rotate(180deg);
+				}
+				&.disabled {
+					pointer-events: none;
+				}
+				img {
+					right: 0;
+
+				}
+				span {
+					display: block;
+					padding-right: 50px;
+					text-align: right;
+				}
+			}
+		}
+		&.size {
+			right: -250px;
+			.option {
+				transform: translateX(-40px);
+				span {
+					padding-left: 50px;
+				}
+			}
+		}
+		.option {
+			display: block;
+			height: 40px;
+			margin-bottom: 15px;
+			text-decoration: none;
+			opacity: 0;
+			transition: transform .5s ease, opacity .5s ease;
+			&.load {
+				opacity: 1;
+				transform: translateX(0);
+			}
+			&:hover {
+				cursor: pointer;
+				svg {
+					stroke: #333;
+				}
+				span {
+					color: #333;
+				}
+			}
+			svg {
+				position: absolute;
+				width: 40px;
+				height: 40px;
+				fill: none;
+				stroke: #111;
+				stroke-width: 15;
+			}
+			img {
+				position: absolute;
+				width: 40px;
+				height: 40px;
+			}
+			span {
+				display: block;
+				line-height: 40px;
+				font-size: 1.3rem;
+				font-family: 'eurostile';
+				text-transform: uppercase;
+				font-weight: 700;
+				color: #111;
+			}
+			&.small {
+				svg {
+					transform: scale(.7) translate(0, -2px);
+				}
+				&.active {
+					svg {
+						fill: #fcb54b;
+					}
+					span {
+						color: #fcb54b;
+					}
+				}
+			}
+			&.medium {
+				svg {
+					transform: scale(.7) translate(-2px, -3px);
+				}
+				&.active {
+					svg {
+						fill: #40a0ac;
+					}
+					span {
+						color: #40a0ac;
+					}
+				}
+			}
+			&.large {
+				svg {
+					transform: scale(.7) translate(0, -1px);
+				}
+				&.active {
+					svg {
+						fill: #d22f42;
+					}
+					span {
+						color: #d22f42;
+					}
+				}
+			}
+			&.clear {
+				opacity: 0;
+				pointer-events: none;
+				&.show {
+					opacity: 1;
+					pointer-events: all;
+					transition: .3s ease;
+				}
+			}
+		}
+	}
+}

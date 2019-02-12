@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="SHT">
+<link href="style.css" type="text/css" rel="stylesheet" media="screen"/>
+<title>Landing Pads</title>
+</head>
+<body>
+    <div class="container">
+        <div class="interior">
+            <div class="inner">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 1048 1048">
+                  <path
+                        d="M 661.06,12.50
+                           C 661.06,12.50 386.94,12.50 386.94,12.50
+                             386.94,12.50 149.56,149.56 149.56,149.56
+                             149.56,149.56 12.50,386.94 12.50,386.94
+                             12.50,386.94 12.50,661.06 12.50,661.06
+                             12.50,661.06 149.56,898.44 149.56,898.44
+                             149.56,898.44 386.94,1035.50 386.94,1035.50
+                             386.94,1035.50 661.06,1035.50 661.06,1035.50
+                             661.06,1035.50 898.44,898.44 898.44,898.44
+                             898.44,898.44 1035.50,661.06 1035.50,661.06
+                             1035.50,661.06 1035.50,386.94 1035.50,386.94
+                             1035.50,386.94 898.44,149.56 898.44,149.56
+                             898.44,149.56 661.06,12.50 661.06,12.50 Z" />
+                </svg>
+                <img src="inner.png">
+            </div>
+            <div class="layer l0"></div>
+            <div class="layer l1"></div>
+            <div class="layer l2"></div>
+            <div class="layer l3"></div>
+            <div class="layer l4"></div>
+        </div>
+        <div class="options mode">
+            <div onclick="rotate()" href="#" class="option normal disabled">
+                <img src="gate.svg">
+                <span>Normal</span>
+            </div>
+            <div onclick="rotate()" class="option inverted">
+            <img src="gate.svg">
+                <span>Inverted</span>
+            </div>
+        </div>
+        <div class="options size">
+            <div onclick="filter('small')" class="option small">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 200 200">
+                    <path
+                        d="M 42.30,90.70
+                           C 42.30,90.70 42.22,93.70 42.22,93.70
+                             42.22,93.70 31.59,87.53 31.59,87.53
+                             31.59,87.53 42.30,90.70 42.30,90.70 Z
+                           M 82.44,105.81
+                           C 82.44,105.81 82.31,114.38 82.31,114.38
+                             82.31,114.38 64.81,104.56 64.81,104.56
+                             64.81,104.56 64.81,101.12 64.81,101.12
+                             64.81,101.12 82.44,105.81 82.44,105.81 Z
+                           M 90.56,109.69
+                           C 90.56,109.69 90.69,118.56 90.62,118.56
+                             90.56,118.56 110.19,124.62 110.19,124.62
+                             110.19,124.62 110.31,121.56 110.31,121.56
+                             110.31,121.56 90.56,109.69 90.56,109.69 Z
+                           M 134.89,131.51
+                           C 134.89,131.51 134.98,135.60 134.98,135.60
+                             134.98,135.60 147.38,138.56 147.38,138.56
+                             147.38,138.56 134.89,131.51 134.89,131.51 Z
+                           M 142.97,72.91
+                           C 142.97,72.91 152.52,136.51 152.52,136.51
+                             152.52,136.51 86.25,102.56 86.25,102.56
+                             86.25,102.56 28.90,81.63 28.90,81.63
+                             28.90,81.63 107.34,58.52 107.34,58.52M 19.33,85.36
+                           C 19.33,85.36 28.69,81.56 28.69,81.56
+                             28.69,81.56 110.49,71.47 110.49,71.47
+                             110.49,71.47 152.55,136.45 152.55,136.45
+                             152.55,136.45 165.23,148.89 165.23,148.89M 107.43,58.35
+                           C 107.43,58.35 29.00,75.19 29.00,75.19
+                             29.00,75.19 18.69,85.56 18.69,85.56
+                             18.69,85.56 68.88,112.38 68.88,112.50
+                             68.88,112.62 105.62,128.38 105.62,128.38
+                             105.62,128.38 165.25,149.00 165.25,149.00
+                             165.25,149.00 173.50,135.25 173.50,135.25
+                             173.50,135.25 143.00,72.75 143.00,72.75
+                             143.00,72.75 107.43,58.35 107.43,58.35 Z
+                           M 107.40,58.53
+                           C 107.40,58.53 110.50,71.44 110.50,71.44
+                             110.50,71.44 142.88,72.88 142.88,72.88" />
+                </svg>
+                <span>Small</span>
+            </div>
+            <div onclick="filter('medium')" class="option medium">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 200 200">
+                    <path
+                        d="M 112.31,33.44
+                           C 112.31,33.44 109.14,27.52 109.14,27.52M 153.65,115.76
+                           C 153.65,115.76 40.47,47.86 40.47,47.86M 44.42,134.52
+                           C 44.42,134.52 49.36,133.52 49.36,133.52M 119.50,177.25
+                           C 119.50,177.25 44.41,134.53 44.41,134.53
+                             44.41,134.53 40.47,47.86 40.47,47.86
+                             40.47,47.86 109.16,27.52 109.16,27.52
+                             109.16,27.52 175.85,59.42 175.85,59.42
+                             175.85,59.42 112.31,33.44 112.31,33.44
+                             112.31,33.44 153.64,115.76 153.64,115.76
+                             153.64,115.76 49.38,133.50 49.38,133.50
+                             49.38,133.50 119.50,177.25 119.50,177.25 Z" />
+                </svg>
+                <span>Medium</span>
+            </div>
+            <div onclick="filter('large')" class="option large">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 200 200">
+                    <path
+                        d="M 56.27,41.45
+                           C 56.27,41.45 31.83,44.43 31.83,44.43
+                             31.83,44.43 31.45,88.91 31.45,88.91
+                             31.45,88.91 184.62,152.62 184.62,152.62
+                             184.62,152.62 140.26,113.70 140.26,113.70
+                             140.26,113.70 136.57,116.65 136.57,116.65
+                             136.57,116.65 131.83,112.61 131.83,112.61
+                             131.83,112.61 135.35,109.39 135.35,109.39
+                             135.35,109.39 129.74,104.61 129.74,104.61
+                             129.74,104.61 125.57,108.26 125.57,108.26
+                             125.57,108.26 120.17,104.30 120.17,104.30
+                             120.17,104.30 124.87,100.30 124.87,100.30
+                             124.87,100.30 56.27,41.45 56.27,41.45 Z
+                           M 38.31,83.23
+                           C 38.31,83.23 184.63,152.64 184.63,152.64
+                             184.63,152.64 39.80,43.43 39.80,43.43
+                             39.80,43.43 38.31,83.22 38.31,83.22
+                             38.31,83.22 31.45,88.91 31.45,88.91" />
+                </svg>
+                <span>Large</span>
+            </div>
+            <div onclick="unhighlight();" class="option clear">
+                <span>Clear</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="jquery.min.js"></script>
+<script>
+$(window).on("load", function() {
+    var data, pad, segment, offset, length, x, y, scale, correction, size;
+    var pads = [
+        "01,1,0,1",
+        "02,1,1,1",
+        "03,1,2,2",
+        "04,1,4,1",
+        "05,2,0,1",
+        "06,2,1,1",
+        "07,2,2,2",
+        "08,2,4,1",
+        "09,3,0,2",
+        "10,3,2,3",
+        "11,4,0,1",
+        "12,4,1,1",
+        "13,4,2,1",
+        "14,4,3,1",
+        "15,4,4,1",
+        "16,5,0,1",
+        "17,5,1,1",
+        "18,5,2,2",
+        "19,5,4,1",
+        "20,6,0,1",
+        "21,6,1,1",
+        "22,6,2,2",
+        "23,6,4,1",
+        "24,7,0,2",
+        "25,7,2,3",
+        "26,8,0,1",
+        "27,8,1,1",
+        "28,8,2,1",
+        "29,8,3,1",
+        "30,8,4,1",
+        "31,9,0,1",
+        "32,9,1,1",
+        "33,9,2,2",
+        "34,9,4,1",
+        "35,10,0,1",
+        "36,10,1,1",
+        "37,10,2,2",
+        "38,10,4,1",
+        "39,11,0,2",
+        "40,11,2,3",
+        "41,12,0,1",
+        "42,12,1,1",
+        "43,12,2,1",
+        "44,12,3,1",
+        "45,12,4,1"
+    ];
+
+    for (i=0; i<45; i++) {
+        data = pads[i].split(",");
+        pad = data[0];
+        segment = parseInt(data[1]);
+        offset = parseInt(data[2]);
+        length = parseInt(data[3]);
+        scale = 1 + offset * 0.1;
+        correction = 1 - offset * 0.01;
+        //scale = 1;
+        if (length == 1) {
+            x = 736 * correction; // 736
+            y = 96;
+            size = "small";
+        }
+        else if (length == 2) {
+            x = 656; // 656
+            y = 80;
+            size = "medium";
+        }
+        else if (length == 3) {
+            x = 578;
+            y = 60;
+            size = "large";
+        }
+        $(".layer.l" + offset).append(`
+            <svg style="transform: rotate(${(30 * (segment - 1))}deg);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1048 1048">
+                <path class="pad ${size}"
+                    d="M 0.00,0.00
+                        C 421.92,0.00 510.43,0.00 1024.00,0.00
+                        963.13,227.43 950.05,276.36 887.00,512.09
+                        471.52,272.22 402.21,232.21 0.00,0.00 Z" />
+                <foreignObject x="${x}" y="${y}" width="256" height="256">
+                    <p data-rotate="${-(30 * (segment - 1)) - 75}" data-scale="${scale}" style="transform: rotate(${-(30 * (segment - 1)) - 75}deg) scale(${scale})">${pad}</p>
+                </foreignObject>
+            </svg>
+        `);
+    }
+    $(".inner").addClass("load");
+    $(".layer").each(function(index, element) {
+        var element = this;
+        setTimeout(function() {
+            $(element).addClass("load");
+        }, (index * 50) + 250);
+    });
+    $(".mode .option").each(function(index) {
+        var element = this;
+        setTimeout(function() {
+            $(element).addClass("load");
+        }, 150 * index + 750);
+    });
+    $(".size .option").each(function(index) {
+        var element = this;
+        setTimeout(function() {
+            $(element).addClass("load");
+        }, 100 * index + 750);
+    });
+
+
+
+
+
+
+    // $(".pad.medium").each(function() {
+    //     $(this).addClass("highlighted");
+    // });
+    // $(".pad.large").each(function() {
+    //     $(this).addClass("highlighted");
+    // });
+    // for (var i=0; i<12; i++) {
+    //     $(".l1").append("<img src='t30d.svg' style='transform: rotate(" + 30 * i + "deg);'>");
+    // }
+
+    // var pads = '';
+    // for (i=0; i<45;i++) {
+    //     pads += '"' + ('0' + (i + 1)).slice(-2) + ',seg,off,len",\n';
+    // }
+    // console.log(pads);
+
+
+});
+function unhighlight(size = null) {
+    if (size) {
+        $(".pad." + size).removeClass("highlighted");
+        $(".size .option." + size).removeClass("active");
+    }
+    else {
+        activated['small'] = false;
+        activated['medium'] = false;
+        activated['large'] = false;
+            $(".size .option:not(.clear)").removeClass("active");
+        $(".pad").removeClass("highlighted");
+        $(".size .option.clear").removeClass("show");
+    }
+}
+
+var activated = {
+    "small": false,
+    "medium": false,
+    "large": false
+}
+
+function filter(size) {
+    if (activated[size] == true) {
+        activated[size] = false;
+        $(".size .option." + size).removeClass("active");
+        unhighlight(size);
+    }
+    else {
+        activated[size] = true;
+        $(".size .option." + size).addClass("active");
+        $(".pad." + size).each(function() {
+            $(this).addClass("highlighted");
+        });
+    }
+    if (activated['small'] == false && activated['medium'] == false && activated['large'] == false) {
+        $(".size .option.clear").removeClass("show");
+    }
+    else {
+        $(".size .option.clear").addClass("show");
+    }
+}
+var inverted = false;
+function rotate() {
+    if (inverted == false) {
+        inverted = true;
+        $(".mode .normal").removeClass("disabled");
+        $(".mode .inverted").addClass("disabled");
+        $(".container .interior").css("transform", "rotate(180deg)");
+    }
+    else {
+        inverted = false;
+        $(".mode .normal").addClass("disabled");
+        $(".mode .inverted").removeClass("disabled");
+        $(".container .interior").css("transform", "rotate(0deg)");
+    }
+
+    $(".interior svg p").each(function() {
+        var rotate = parseInt($(this).attr("data-rotate"));
+        rotate = rotate + 180;
+        var scale = $(this).data("scale");
+        $(this).css("transform", "rotate("+rotate+"deg) scale("+scale+")");
+        $(this).attr("data-rotate", rotate);
+    });
+}
+</script>
+</body>
+</html>
