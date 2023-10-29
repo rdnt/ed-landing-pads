@@ -86,12 +86,12 @@ html, body {
 						pointer-events: all;
 						fill: #f2f2f2;
 						stroke: #747578;
-						stroke-width: 5;
+						stroke-width: 10;
 						transition: fill .15s ease, stroke .15s ease;
 						&:hover {
 							fill: #d8d8da;
 							~ foreignObject p {
-								color: #333;
+								color: #000;
 							}
 						}
 					}
@@ -108,7 +108,7 @@ html, body {
 							font-size: 110px;
 							font-family: 'eurostile';
 							text-align: center;
-							color: #111;
+							color: #2feadd;
 							transition: color .3s ease;
 						}
 					}
@@ -117,7 +117,11 @@ html, body {
 							fill: #fcb54b !important;
 						}
 						&.medium {
-							fill: #40a0ac !important;
+							fill: #2feadd !important;
+
+							foreignObject p {
+								color: #000 !important;
+							}
 						}
 						&.large {
 							fill: #d22f42 !important;
@@ -148,7 +152,7 @@ html, body {
 					path {
 						fill: #eaeaea;
 						stroke: #747578;
-						stroke-width: 3;
+						stroke-width: 6;
 						pointer-events: all;
 					}
 				}
@@ -265,7 +269,7 @@ html, body {
 						fill: #40a0ac;
 					}
 					span {
-						color: #40a0ac;
+						color: #000;
 					}
 				}
 			}
