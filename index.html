@@ -48,8 +48,7 @@
                 <span>Bri'ish</span>
             </div>
             <div onclick="darkMode()" class="option inverted">
-                <img src="gate.svg">
-                <span>Dark Mode</span>
+                <span></span>
             </div>
         </div>
         <div class="options size">
@@ -291,7 +290,7 @@ function filter(size) {
         $(".size .option." + size).addClass("active");
         $(".pad." + size).each(function() {
             $(this).addClass("highlighted");
-            $(".medium + foreignObject p").css("color", "#000");
+            $(`.${size} + foreignObject p`).css("color", "#000");
         });
     }
     if (activated['small'] == false && activated['medium'] == false && activated['large'] == false) {
@@ -330,10 +329,10 @@ function darkMode() {
     if (isDarkMode == true) {
         console.log('dark');
         $("html body").css("background-color", "#000");
-        $(".option span").css("color", "#2feadd");
-        $(".option svg").css("stroke", "#000");
+        // $(".option span").css("color", "#2feadd");
+        // $(".option svg").css("stroke", "#000");
         $(".container .interior .layer svg path, .container .interior .inner svg path").css("fill", "#071621");
-        $(".container .interior .layer svg path, .container .interior .inner svg path").css("stroke", "#000");
+        // $(".container .interior .layer svg path, .container .interior .inner svg path").css("stroke", "#000");
         // $(".container .interior .layer svg path ~ foreignObject p, .container .interior .inner svg path ~ foreignObject p").css("color", "#2feadd");
 
 

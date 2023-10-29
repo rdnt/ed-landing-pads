@@ -100,7 +100,7 @@ body {
 .container .interior .inner.layer svg path {
   pointer-events: all;
   fill: #f2f2f2;
-  stroke: #747578;
+  stroke: #000;
   stroke-width: 10;
   transition: fill 0.15s ease, stroke 0.15s ease;
 }
@@ -130,9 +130,21 @@ body {
   color: #2feadd;
   transition: color 0.3s ease;
 }
+.container .interior .layer.layer svg path.pad.highlighted,
+.container .interior .inner.layer svg path.pad.highlighted {
+  fill: #2feadd !important;
+}
+.container .interior .layer.layer svg path.pad.highlighted foreignObject p,
+.container .interior .inner.layer svg path.pad.highlighted foreignObject p {
+  color: #000 !important;
+}
 .container .interior .layer.layer svg path.pad.highlighted.small,
 .container .interior .inner.layer svg path.pad.highlighted.small {
-  fill: #fcb54b !important;
+  fill: #2feadd !important;
+}
+.container .interior .layer.layer svg path.pad.highlighted.small foreignObject p,
+.container .interior .inner.layer svg path.pad.highlighted.small foreignObject p {
+  color: #000 !important;
 }
 .container .interior .layer.layer svg path.pad.highlighted.medium,
 .container .interior .inner.layer svg path.pad.highlighted.medium {
@@ -144,7 +156,11 @@ body {
 }
 .container .interior .layer.layer svg path.pad.highlighted.large,
 .container .interior .inner.layer svg path.pad.highlighted.large {
-  fill: #d22f42 !important;
+  fill: #2feadd !important;
+}
+.container .interior .layer.layer svg path.pad.highlighted.large foreignObject p,
+.container .interior .inner.layer svg path.pad.highlighted.large foreignObject p {
+  color: #000 !important;
 }
 .container .interior .layer.layer svg path.pad.highlighted:hover.small,
 .container .interior .inner.layer svg path.pad.highlighted:hover.small {
@@ -174,7 +190,7 @@ body {
 .container .interior .layer.inner svg path,
 .container .interior .inner.inner svg path {
   fill: #eaeaea;
-  stroke: #747578;
+  stroke: #000;
   stroke-width: 6;
   pointer-events: all;
 }
@@ -241,17 +257,17 @@ body {
   cursor: pointer;
 }
 .container .options .option:hover svg {
-  stroke: #333;
+  stroke: #071621;
 }
 .container .options .option:hover span {
-  color: #333;
+  color: #2feadd;
 }
 .container .options .option svg {
   position: absolute;
   width: 40px;
   height: 40px;
   fill: none;
-  stroke: #111;
+  stroke: #2feadd;
   stroke-width: 15;
 }
 .container .options .option img {
@@ -266,16 +282,16 @@ body {
   font-family: 'eurostile';
   text-transform: uppercase;
   font-weight: 700;
-  color: #111;
+  color: #2feadd;
 }
 .container .options .option.small svg {
   transform: scale(0.7) translate(0, -2px);
 }
 .container .options .option.small.active svg {
-  fill: #fcb54b;
+  fill: #071621;
 }
 .container .options .option.small.active span {
-  color: #fcb54b;
+  color: #2feadd;
 }
 .container .options .option.medium svg {
   transform: scale(0.7) translate(-2px, -3px);
@@ -284,7 +300,7 @@ body {
   fill: #40a0ac;
 }
 .container .options .option.medium.active span {
-  color: #000;
+  color: #2feadd;
 }
 .container .options .option.large svg {
   transform: scale(0.7) translate(0, -1px);
@@ -293,7 +309,7 @@ body {
   fill: #d22f42;
 }
 .container .options .option.large.active span {
-  color: #d22f42;
+  color: #2feadd;
 }
 .container .options .option.clear {
   opacity: 0;
